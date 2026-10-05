@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style type="text/css">
+        body {
+            background-color: lightblue;
+            color: navy;
+        }
+
+        .hero-image {
+            background-image: url(https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1280px-Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail);
+            margin: 0;
+            padding: 20px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+        </div>
+    </div>
+    
+    <p>
+        Our 12" wood-fire pizzas...
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>Your Information</legend>
+            <!-- NAME -->
+            <label for="full-name">Name:</label>
+            <input type="text" name="full-name" placeholder="Enter your full name">
+            <br>
+            <!-- ADDRESS -->
+
+            <!-- CONTACT -->
+
+            <!-- EMAIL -->
+
+            <!-- MESSAGE -->
+            <label>Delivery Requests</label><br>
+            <textarea placeholder="Add delivery instructions"></textarea>
+        </fieldset>
+
+        <h3>Design your dream pizza</h3>
+
+        <fieldset>
+            <legend>Pizza Specs</legend>
+
+            <!-- CRUST -->
+            <fieldset>
+                <legend>Crust <em>(Choose one)</em></legend>
+                <!-- Classic White -->
+                <input type="radio" name="crust"> 
+                <label>Classic White</label>
+                <br>
+
+                <!-- Multigrain -->
+                <input type="radio" name="crust"> 
+                <label>Multigrain</label>
+                <br>
+            </fieldset>
+
+            <!-- TOPPINGS -->
+
+            <!-- QUANTITY -->
+            <fieldset>
+                <legend>Number: </legend>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </fieldset>
+        </fieldset>
+
+        <input type="submit" value="Bring me my pizza">
+        <input type="reset`" value="Let me order again">
+        
+    </form>
+
+</body>
+</html>
